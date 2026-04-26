@@ -85,7 +85,7 @@ function Footer() {
         .dev-list {
           display: flex;
           flex-direction: column;
-          gap: 0.5rem;
+          gap: 0.75rem;
         }
 
         .dev-item {
@@ -98,7 +98,22 @@ function Footer() {
         }
 
         .dev-icon {
-          color: var(--accent-secondary);
+          color: #000;
+          font-size: 1rem;
+        }
+
+        .dev-github-link {
+          color: var(--text-main);
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .dev-github-link:hover {
+          color: var(--accent-primary);
+          transform: translateX(4px);
         }
 
         .footer-bottom {
@@ -160,17 +175,50 @@ function Footer() {
 
         <div className="footer-devs">
           <h4 className="footer-heading" style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ color: 'var(--danger)' }}>♥</span> Core Developers
+            <span></span> Developers
           </h4>
           <div className="dev-list">
             <div className="dev-item">
-              <span className="dev-icon">↳</span> Hemraj
+             
+              <a 
+                href="https://github.com/123Hemraj" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="dev-github-link"
+              >
+                <svg className="dev-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.88-.01-1.73-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/>
+                </svg>
+                Hemraj
+              </a>
             </div>
             <div className="dev-item">
-              <span className="dev-icon">↳</span> Mohit
+            
+              <a 
+                href="https://github.com/Mohit" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="dev-github-link"
+              >
+                <svg className="dev-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.88-.01-1.73-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/>
+                </svg>
+                Mohit
+              </a>
             </div>
             <div className="dev-item">
-              <span className="dev-icon">↳</span> Ritikraj
+              
+              <a 
+                href="https://github.com/Ritikraj" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="dev-github-link"
+              >
+                <svg className="dev-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.88-.01-1.73-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"/>
+                </svg>
+                Ritikraj
+              </a>
             </div>
           </div>
         </div>
@@ -179,13 +227,10 @@ function Footer() {
       <div className="footer-bottom">
         <div>&copy; {new Date().getFullYear()} DeepFake Detection System. All rights reserved.</div>
         <div style={{ display: 'flex', gap: '1rem' }}>
-          <span>TensorFlow Pipeline</span>
-          <span>•</span>
-          <span>Xception-LSTM</span>
+         
         </div>
       </div>
     </footer>
   );
 }
-
 export default Footer;
